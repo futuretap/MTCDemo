@@ -4,25 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MTCDemo.xcscheme</key>
+		<key>Pods-MTCDemo.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>MTCMessenger.xcscheme</key>
+		<key>Pods-MTCMessenger.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>AA5825481E7854C500365EAE</key>
+		<key>72D074316FC64BB02DA04B032F711C0D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA751F011E784BC0008C115C</key>
+		<key>FBCE6AA21A980AA3445BB583A75A0D2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE2FE8DA22F72397D1EBAAF87B9447EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

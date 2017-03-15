@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12084"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eAV-M3-vsy">
+            <objects>
+                <viewController id="FPY-YY-nPy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Koe-oS-4zE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oiv-e1-Xsg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YZd-7K-wPx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjx-wh-x2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jH8-bT-JgV" customClass="MessageView" customModule="MTCDemo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IU5-xU-rsD">
+                            <rect key="frame" x="35" y="159" width="180" height="180"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="poG-Sv-f9A"/>
+                                <constraint firstAttribute="width" constant="180" id="zFq-2R-bvZ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MTC Logo" translatesAutoresizingMaskIntoConstraints="NO" id="XGH-KD-rJ1">
+                            <rect key="frame" x="30" y="23" width="540" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="540" id="jzs-sX-7OB"/>
+                                <constraint firstAttribute="height" constant="100" id="kkM-5Z-VUc"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7To-rV-VyT">
+                            <rect key="frame" x="239" y="159" width="326" height="51"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbp-lF-MDl">
+                            <rect key="frame" x="35" y="529" width="535" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kbp-lF-MDl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7To-rV-VyT" secondAttribute="bottom" constant="30" id="4jg-n4-8Cg"/>
+                        <constraint firstAttribute="bottom" secondItem="kbp-lF-MDl" secondAttribute="bottom" constant="30" id="5MH-bf-8Wb"/>
+                        <constraint firstItem="kbp-lF-MDl" firstAttribute="leading" secondItem="IU5-xU-rsD" secondAttribute="leading" id="8aH-sL-SHE"/>
+                        <constraint firstItem="IU5-xU-rsD" firstAttribute="leading" secondItem="XGH-KD-rJ1" secondAttribute="leading" constant="5" id="9ap-N5-Hzz"/>
+                        <constraint firstItem="7To-rV-VyT" firstAttribute="top" secondItem="IU5-xU-rsD" secondAttribute="top" id="CFy-Zq-MD9"/>
+                        <constraint firstItem="kbp-lF-MDl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IU5-xU-rsD" secondAttribute="bottom" constant="24" id="CnK-dr-tKC"/>
+                        <constraint firstItem="XGH-KD-rJ1" firstAttribute="centerX" secondItem="jH8-bT-JgV" secondAttribute="centerX" id="HlA-lA-a3x"/>
+                        <constraint firstItem="XGH-KD-rJ1" firstAttribute="top" secondItem="jH8-bT-JgV" secondAttribute="topMargin" constant="15" id="Jde-ZO-CB8"/>
+                        <constraint firstItem="IU5-xU-rsD" firstAttribute="top" secondItem="XGH-KD-rJ1" secondAttribute="bottom" constant="36" id="Uzd-kP-HQD"/>
+                        <constraint firstItem="7To-rV-VyT" firstAttribute="leading" secondItem="IU5-xU-rsD" secondAttribute="trailing" constant="24" id="csT-7m-ycU"/>
+                        <constraint firstItem="kbp-lF-MDl" firstAttribute="trailing" secondItem="XGH-KD-rJ1" secondAttribute="trailing" id="dK7-Dr-rB0"/>
+                        <constraint firstItem="7To-rV-VyT" firstAttribute="trailing" secondItem="XGH-KD-rJ1" secondAttribute="trailing" constant="-5" id="fKR-1h-TZO"/>
+                        <constraint firstAttribute="width" constant="600" id="gBb-7u-UWq"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="IU5-xU-rsD" secondAttribute="bottom" constant="8" id="p5F-ZS-9H7"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="contentLabel" destination="7To-rV-VyT" id="ubH-mE-vUn"/>
+                        <outlet property="detailLabel" destination="kbp-lF-MDl" id="WvM-hN-3gy"/>
+                        <outlet property="speakerImageView" destination="IU5-xU-rsD" id="6P7-Sh-rkk"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-191" y="282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MTC Logo" width="454" height="70"/>
+    </resources>
+</document>

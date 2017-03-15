@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MTCDemo
+//  MTCMessengerApp
 //
-//  Created by Ortwin Gentz on 14.03.17.
+//  Created by Ortwin Gentz on 13.03.17.
 //  Copyright © 2017 FutureTap. All rights reserved.
 //
 

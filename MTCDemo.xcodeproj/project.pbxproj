@@ -7,39 +7,142 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA751F061E784BC0008C115C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F051E784BC0008C115C /* AppDelegate.swift */; };
-		AA751F081E784BC0008C115C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F071E784BC0008C115C /* ViewController.swift */; };
-		AA751F0B1E784BC0008C115C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA751F091E784BC0008C115C /* Main.storyboard */; };
-		AA751F0D1E784BC0008C115C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA751F0C1E784BC0008C115C /* Assets.xcassets */; };
+		AA58254B1E7854C500365EAE /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA58254A1E7854C500365EAE /* Messages.framework */; };
+		AA58254E1E7854C500365EAE /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58254D1E7854C500365EAE /* MessagesViewController.swift */; };
+		AA5825511E7854C500365EAE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA58254F1E7854C500365EAE /* MainInterface.storyboard */; };
+		AA5825571E7854C500365EAE /* MTCMessenger.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA5825491E7854C500365EAE /* MTCMessenger.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA58255C1E7854DB00365EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA751F181E784C2B008C115C /* Assets.xcassets */; };
+		AA58255D1E7854DB00365EAE /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AA751F191E784C2B008C115C /* data.json */; };
+		AA58255E1E7854DB00365EAE /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F1B1E784C2B008C115C /* Speaker.swift */; };
+		AA58255F1E7854DB00365EAE /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F1C1E784C2B008C115C /* Talk.swift */; };
+		AA5825601E7854DB00365EAE /* TalksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F1D1E784C2B008C115C /* TalksTableViewController.swift */; };
+		AA5825611E7854DB00365EAE /* TalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F1E1E784C2B008C115C /* TalkTableViewCell.swift */; };
+		AA5825631E78562900365EAE /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5825621E78562900365EAE /* MessageView.swift */; };
 		AA751F101E784BC0008C115C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA751F0E1E784BC0008C115C /* LaunchScreen.storyboard */; };
+		AA751F1F1E784C2B008C115C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F171E784C2B008C115C /* AppDelegate.swift */; };
+		AA751F201E784C2B008C115C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA751F181E784C2B008C115C /* Assets.xcassets */; };
+		AA751F211E784C2B008C115C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AA751F191E784C2B008C115C /* data.json */; };
+		AA751F221E784C2B008C115C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA751F1A1E784C2B008C115C /* Main.storyboard */; };
+		AA751F231E784C2B008C115C /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F1B1E784C2B008C115C /* Speaker.swift */; };
+		AA751F241E784C2B008C115C /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F1C1E784C2B008C115C /* Talk.swift */; };
+		AA751F251E784C2B008C115C /* TalksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F1D1E784C2B008C115C /* TalksTableViewController.swift */; };
+		AA751F261E784C2B008C115C /* TalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA751F1E1E784C2B008C115C /* TalkTableViewCell.swift */; };
+		B05A9154AB111A16AB34301B /* Pods_MTCMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECD97776FBD4064C253DCD4 /* Pods_MTCMessenger.framework */; };
+		DCDF054DBC14AA6F4BBA7F59 /* Pods_MTCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776DD90CFB9DFA5A2A1276AA /* Pods_MTCDemo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AA5825551E7854C500365EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA751EFA1E784BC0008C115C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5825481E7854C500365EAE;
+			remoteInfo = MTCMessenger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA58255B1E7854C500365EAE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA5825571E7854C500365EAE /* MTCMessenger.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1ECD97776FBD4064C253DCD4 /* Pods_MTCMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTCMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54103FE1F995C5688BDEB6A8 /* Pods-MTCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTCDemo/Pods-MTCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		56DAAAB2D0FF681B3B922BD1 /* Pods-MTCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTCDemo/Pods-MTCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		776DD90CFB9DFA5A2A1276AA /* Pods_MTCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F59CAE17D6CD0637FEDA25 /* Pods-MTCMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCMessenger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTCMessenger/Pods-MTCMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		AA21F4361E784D5D0083124F /* MessageView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessageView.storyboard; sourceTree = "<group>"; };
+		AA5825491E7854C500365EAE /* MTCMessenger.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MTCMessenger.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA58254A1E7854C500365EAE /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		AA58254D1E7854C500365EAE /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		AA5825501E7854C500365EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AA5825541E7854C500365EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5825621E78562900365EAE /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		AA751F021E784BC0008C115C /* MTCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA751F051E784BC0008C115C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA751F071E784BC0008C115C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA751F0A1E784BC0008C115C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AA751F0C1E784BC0008C115C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA751F0F1E784BC0008C115C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA751F111E784BC0008C115C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA751F171E784C2B008C115C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA751F181E784C2B008C115C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA751F191E784C2B008C115C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		AA751F1A1E784C2B008C115C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AA751F1B1E784C2B008C115C /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		AA751F1C1E784C2B008C115C /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		AA751F1D1E784C2B008C115C /* TalksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksTableViewController.swift; sourceTree = "<group>"; };
+		AA751F1E1E784C2B008C115C /* TalkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkTableViewCell.swift; sourceTree = "<group>"; };
+		B10BFAE1616617FEDD40AA8A /* Pods-MTCMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCMessenger.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTCMessenger/Pods-MTCMessenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AA5825461E7854C500365EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA58254B1E7854C500365EAE /* Messages.framework in Frameworks */,
+				B05A9154AB111A16AB34301B /* Pods_MTCMessenger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA751EFF1E784BC0008C115C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDF054DBC14AA6F4BBA7F59 /* Pods_MTCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43ED744926828E25964B4C0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54103FE1F995C5688BDEB6A8 /* Pods-MTCDemo.debug.xcconfig */,
+				56DAAAB2D0FF681B3B922BD1 /* Pods-MTCDemo.release.xcconfig */,
+				A1F59CAE17D6CD0637FEDA25 /* Pods-MTCMessenger.debug.xcconfig */,
+				B10BFAE1616617FEDD40AA8A /* Pods-MTCMessenger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8302A123B058FB55545A5509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				776DD90CFB9DFA5A2A1276AA /* Pods_MTCDemo.framework */,
+				AA58254A1E7854C500365EAE /* Messages.framework */,
+				1ECD97776FBD4064C253DCD4 /* Pods_MTCMessenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA58254C1E7854C500365EAE /* MTCMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				AA58254D1E7854C500365EAE /* MessagesViewController.swift */,
+				AA58254F1E7854C500365EAE /* MainInterface.storyboard */,
+				AA5825541E7854C500365EAE /* Info.plist */,
+				AA5825621E78562900365EAE /* MessageView.swift */,
+			);
+			path = MTCMessenger;
+			sourceTree = "<group>";
+		};
 		AA751EF91E784BC0008C115C = {
 			isa = PBXGroup;
 			children = (
 				AA751F041E784BC0008C115C /* MTCDemo */,
+				AA58254C1E7854C500365EAE /* MTCMessenger */,
 				AA751F031E784BC0008C115C /* Products */,
+				43ED744926828E25964B4C0E /* Pods */,
+				8302A123B058FB55545A5509 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				AA751F021E784BC0008C115C /* MTCDemo.app */,
+				AA5825491E7854C500365EAE /* MTCMessenger.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,10 +158,15 @@
 		AA751F041E784BC0008C115C /* MTCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AA751F051E784BC0008C115C /* AppDelegate.swift */,
-				AA751F071E784BC0008C115C /* ViewController.swift */,
-				AA751F091E784BC0008C115C /* Main.storyboard */,
-				AA751F0C1E784BC0008C115C /* Assets.xcassets */,
+				AA751F171E784C2B008C115C /* AppDelegate.swift */,
+				AA751F181E784C2B008C115C /* Assets.xcassets */,
+				AA751F191E784C2B008C115C /* data.json */,
+				AA751F1A1E784C2B008C115C /* Main.storyboard */,
+				AA21F4361E784D5D0083124F /* MessageView.storyboard */,
+				AA751F1B1E784C2B008C115C /* Speaker.swift */,
+				AA751F1C1E784C2B008C115C /* Talk.swift */,
+				AA751F1D1E784C2B008C115C /* TalksTableViewController.swift */,
+				AA751F1E1E784C2B008C115C /* TalkTableViewCell.swift */,
 				AA751F0E1E784BC0008C115C /* LaunchScreen.storyboard */,
 				AA751F111E784BC0008C115C /* Info.plist */,
 			);
@@ -67,17 +176,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA751F011E784BC0008C115C /* MTCDemo */ = {
+		AA5825481E7854C500365EAE /* MTCMessenger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA751F141E784BC0008C115C /* Build configuration list for PBXNativeTarget "MTCDemo" */;
+			buildConfigurationList = AA58255A1E7854C500365EAE /* Build configuration list for PBXNativeTarget "MTCMessenger" */;
 			buildPhases = (
-				AA751EFE1E784BC0008C115C /* Sources */,
-				AA751EFF1E784BC0008C115C /* Frameworks */,
-				AA751F001E784BC0008C115C /* Resources */,
+				B2AAEED335350A26321D093B /* [CP] Check Pods Manifest.lock */,
+				AA5825451E7854C500365EAE /* Sources */,
+				AA5825461E7854C500365EAE /* Frameworks */,
+				AA5825471E7854C500365EAE /* Resources */,
+				4302D39FABCCB777B28FA17B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = MTCMessenger;
+			productName = MTCMessenger;
+			productReference = AA5825491E7854C500365EAE /* MTCMessenger.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+		AA751F011E784BC0008C115C /* MTCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA751F141E784BC0008C115C /* Build configuration list for PBXNativeTarget "MTCDemo" */;
+			buildPhases = (
+				95FCCBE847C982C9DB1D7E53 /* [CP] Check Pods Manifest.lock */,
+				AA751EFE1E784BC0008C115C /* Sources */,
+				AA751EFF1E784BC0008C115C /* Frameworks */,
+				AA751F001E784BC0008C115C /* Resources */,
+				869C9709CFA74EEDBBEC4429 /* [CP] Embed Pods Frameworks */,
+				2E93467603FADF6DCD149CB5 /* [CP] Copy Pods Resources */,
+				AA58255B1E7854C500365EAE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5825561E7854C500365EAE /* PBXTargetDependency */,
 			);
 			name = MTCDemo;
 			productName = MTCDemo;
@@ -94,9 +227,15 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = FutureTap;
 				TargetAttributes = {
+					AA5825481E7854C500365EAE = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = VW6ER3YSC3;
+						ProvisioningStyle = Automatic;
+					};
 					AA751F011E784BC0008C115C = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = VW6ER3YSC3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,42 +254,156 @@
 			projectRoot = "";
 			targets = (
 				AA751F011E784BC0008C115C /* MTCDemo */,
+				AA5825481E7854C500365EAE /* MTCMessenger */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AA5825471E7854C500365EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA58255C1E7854DB00365EAE /* Assets.xcassets in Resources */,
+				AA58255D1E7854DB00365EAE /* data.json in Resources */,
+				AA5825511E7854C500365EAE /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA751F001E784BC0008C115C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA751F201E784C2B008C115C /* Assets.xcassets in Resources */,
+				AA751F211E784C2B008C115C /* data.json in Resources */,
 				AA751F101E784BC0008C115C /* LaunchScreen.storyboard in Resources */,
-				AA751F0D1E784BC0008C115C /* Assets.xcassets in Resources */,
-				AA751F0B1E784BC0008C115C /* Main.storyboard in Resources */,
+				AA751F221E784C2B008C115C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E93467603FADF6DCD149CB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTCDemo/Pods-MTCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4302D39FABCCB777B28FA17B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTCMessenger/Pods-MTCMessenger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		869C9709CFA74EEDBBEC4429 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTCDemo/Pods-MTCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95FCCBE847C982C9DB1D7E53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2AAEED335350A26321D093B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AA5825451E7854C500365EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5825631E78562900365EAE /* MessageView.swift in Sources */,
+				AA5825611E7854DB00365EAE /* TalkTableViewCell.swift in Sources */,
+				AA58254E1E7854C500365EAE /* MessagesViewController.swift in Sources */,
+				AA58255E1E7854DB00365EAE /* Speaker.swift in Sources */,
+				AA58255F1E7854DB00365EAE /* Talk.swift in Sources */,
+				AA5825601E7854DB00365EAE /* TalksTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA751EFE1E784BC0008C115C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA751F081E784BC0008C115C /* ViewController.swift in Sources */,
-				AA751F061E784BC0008C115C /* AppDelegate.swift in Sources */,
+				AA751F261E784C2B008C115C /* TalkTableViewCell.swift in Sources */,
+				AA751F1F1E784C2B008C115C /* AppDelegate.swift in Sources */,
+				AA751F231E784C2B008C115C /* Speaker.swift in Sources */,
+				AA751F241E784C2B008C115C /* Talk.swift in Sources */,
+				AA751F251E784C2B008C115C /* TalksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AA5825561E7854C500365EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5825481E7854C500365EAE /* MTCMessenger */;
+			targetProxy = AA5825551E7854C500365EAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		AA751F091E784BC0008C115C /* Main.storyboard */ = {
+		AA58254F1E7854C500365EAE /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA751F0A1E784BC0008C115C /* Base */,
+				AA5825501E7854C500365EAE /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		AA751F0E1E784BC0008C115C /* LaunchScreen.storyboard */ = {
@@ -164,6 +417,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AA5825581E7854C500365EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F59CAE17D6CD0637FEDA25 /* Pods-MTCMessenger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = VW6ER3YSC3;
+				INFOPLIST_FILE = MTCMessenger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.futuretap.MTCDemo.MTCMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AA5825591E7854C500365EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10BFAE1616617FEDD40AA8A /* Pods-MTCMessenger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = VW6ER3YSC3;
+				INFOPLIST_FILE = MTCMessenger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.futuretap.MTCDemo.MTCMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		AA751F121E784BC0008C115C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -259,21 +542,28 @@
 		};
 		AA751F151E784BC0008C115C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54103FE1F995C5688BDEB6A8 /* Pods-MTCDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VW6ER3YSC3;
 				INFOPLIST_FILE = MTCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.futuretap.MTCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		AA751F161E784BC0008C115C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DAAAB2D0FF681B3B922BD1 /* Pods-MTCDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VW6ER3YSC3;
 				INFOPLIST_FILE = MTCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -286,6 +576,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA58255A1E7854C500365EAE /* Build configuration list for PBXNativeTarget "MTCMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5825581E7854C500365EAE /* Debug */,
+				AA5825591E7854C500365EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA751EFD1E784BC0008C115C /* Build configuration list for PBXProject "MTCDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -302,6 +601,7 @@
 				AA751F161E784BC0008C115C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module Pods_MTCMessenger {
+  umbrella header "Pods-MTCMessenger-umbrella.h"
+
+  export *
+  module * { export * }
+}
